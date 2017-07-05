@@ -18,6 +18,8 @@ $(document).ready(function() {
       data: question,
       success: function(response) {
         console.log('ajax response: ', response);
+        // show the user the answer!
+        $("#result").text(response.downtown);
       }
     });
 
